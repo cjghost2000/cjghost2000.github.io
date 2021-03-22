@@ -1,0 +1,121 @@
+﻿<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>home</title>
+
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-96x96.png">
+</head>
+
+<body>
+
+<script src="imgNumbers.js" type="text/javascript"></script>
+
+<div id=frame>
+
+	<!-- Random picture chooser, written to the html -->
+	<script>
+		if ( localStorage.getItem('SFW') == '0' ) {
+			document.write('<div id=frame_image style="background-image: url(img/NSFW/' + Math.floor(Math.random() * numberNSFW) + '.webp)">');
+		} else {
+			document.write('<div id=frame_image style="background-image: url(img/SFW/' + Math.floor(Math.random() * numberSFW) + '.webp)">');
+		};
+	</script>
+
+		<!-- Buttons to change between frame1a and frame1b -->
+				<div id="B1" class=button></div>
+				<div id="B2" class=button></div>
+
+			</div> <!-- End frame_image-->
+
+
+	<div id=frame0>
+
+		<div id="Title">search the web</div>
+
+		<input id="searchbox" placeholder="type something..." type="text" autofocus="true"  autocomplete="true"></input>
+
+		<div class="frame1 frame1a">
+			<div class=linkblock>
+				<ul>
+					<div class=blocktitle>
+						General
+					</div>
+					<li><a href="https://mail.google.com/mail/u/0/">Gmail</a></li>
+					<li><a href="https://github.com/">GitHub</a></li>
+					<li><a href="https://outlook.live.com/mail/inbox">Hotmail</a></li>
+					<li><a href="https://www.youtube.com/c/cjghost2001/playlists">Youtube</a></li>
+				</ul>
+			</div>
+			<div class=linkblock>
+				<ul>
+					<div class=blocktitle>
+						Sauce
+					</div>
+					<li><a href="https://anilist.co/user/cjghost2000/">Anime List</a></li>
+					<li><a href="https://piracy.moe/">Anime Index</a></li>
+					<li><a href="https://github.com/Igglybuff/awesome-piracy">Piracy Index</a></li>
+					<li><a href="https://unblocked-pw.github.io/">Unblocked</a></li>
+				</ul>
+			</div>
+			<div class=linkblock>
+				<ul>
+					<div class=blocktitle>
+						Reddit
+					</div>
+					<li><a href="https://www.reddit.com/r/CrackWatch/">r/crackwatch</a></li>
+					<li><a href="https://www.reddit.com/r/FirefoxCSS/">r/firefoxcss</a></li>
+					<li><a href="https://www.reddit.com/r/unixporn/">r/unixporn</a></li>
+					<li><a href="https://www.reddit.com/r/wallpapers/">r/wallpapers</a></li>
+				</ul>
+			</div>
+			<div class=linkblock>
+				<ul>
+					<div class=blocktitle>
+						Artwork
+					</div>
+					<li><a href="https://imgur.com/user/cjghost2000/posts">Imgur</a></li>
+					<li><a href="https://unsplash.com/">Unsplash</a></li>
+					<li><a href="steam://run/431960">Wallengine</a></li>
+					<li><a href="https://alpha.wallhaven.cc">Wallhaven</a></li>
+				</ul>
+			</div>
+			<div class=linkblock>
+				<ul>
+					<div class=blocktitle>
+						Music
+					</div>
+					<li><a href="https://howlongtobeat.com/user.php?n=cjghost2000/">Spotify</a></li>
+					<li><a href="https://www.keybr.com">Soundcloud</a></li>
+					<li><a href="https://play.typeracer.com/">Youtube Music</a></li>
+				</ul>
+			</div>
+				</ul>
+			</div>
+		</div> <!-- End frame1a -->
+
+
+		<div class="frame1 frame1b">
+			<iframe width="400" height="200" style="margin-top: 10px; border-radius: 10px;" src="https://www.youtube.com/embed/FIF9a1_gJL4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class=linkblock style="margin-left: 30px; width: 130px">
+				<ul>
+					<div class=blocktitle>
+						Misc
+					</div>
+					<li><a href="https://www.keybr.com/">keybr</a></li>
+					<li><a href="https://monkeytype.com/">monkeytype</a></li>
+				</ul>
+			</div>
+		</div> <!-- End frame1b -->
+
+	</div> <!-- End frame0 -->
+
+</div> <!-- End frame -->
+
+</body>
+<script src="search.js" type="text/javascript"></script>
+<script src="localStorage.js" type="text/javascript"></script>
+<script src="frameButtons.js" type="text/javascript"></script>
+</html>

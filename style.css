@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700');
+:root {
+  --white1: rgb(240, 233, 233);
+  --gray1: rgb(161, 158, 158);
+  --gray2: rgb(26, 26, 26);
+  --gray3: rgb(70, 68, 68);
+  --gray3_alpha: rgba(185, 185, 185, 0.13);
+  --background: #000000;
+}
+
+body {
+  background-color: var(--background);
+  background-image: url('img/background.png');
+}
+
+#frame {
+  display: inline-block;
+
+  /* Center position hack (CSS sucks)*/
+  width: 1130px;
+  height: 308px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -565px;
+  margin-top: -154px;
+}
+
+#frame0 {
+  text-align: left;
+  float: left;
+  margin-left: 20px;
+}
+
+#frame_image {
+  width: 250px;
+  height: 295px;
+  border-radius: 15px;
+
+  float: left;
+  position: relative;
+
+  background-size: cover;
+  background-position: center top;
+}
+
+.frame1 {
+  width: 860px;
+  text-align: left;
+}
+
+.frame1b {
+  /* Hidden when page is opened */
+  display: none;
+}
+
+#Title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: var(--white1);
+  font-size: 1.5em;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+#searchbox {
+  width: 450px;
+  height: 35px;
+  border: none;
+  border-radius: 40px;
+  outline: none;
+  padding-left: 20px;
+  text-align: left;
+  background-color: rgb(236, 236, 236);
+  color: var(--gray2);
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  caret-color: var(--gray2);
+  margin-left: 5px;
+}
+
+.linkblock {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  width: 120px;
+  height: 230px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: var(--white1);
+  text-align: left;
+  background-position: top 0px center;
+  background-repeat: no-repeat;
+  font-size: 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.blocktitle {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: var(--gray3);
+  padding-top: 0px;
+  padding-bottom: 4px;
+  margin-bottom: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 0px;
+}
+
+.button {
+  opacity: 0.4;
+  width: 15px;
+  height: 15px;
+  background-color: var(--white1);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--gray3) !important;
+  transition: 200ms;
+}
+
+#B1 {
+  /* Default color when page is opened */
+  background-color: var(--gray1);
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+#B2 {
+  position: absolute;
+  bottom: 15px;
+  left: 40px;
+}
+
+#BA {
+  display: inline-block;
+  position: absolute;
+  bottom: 25px;
+  left: 40px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: var(--white1);
+  user-select: none;
+  cursor: pointer;
+}
+
+#BA:hover {
+  color: var(--gray1);
+}
+
+a:link {
+  text-decoration: none;
+  font-weight: normal;
+  color: var(--white1);
+}
+a:visited {
+  text-decoration: none;
+  font-weight: normal;
+  color: var(--white1);
+}
+a:hover {
+  text-decoration: none;
+  font-weight: normal;
+  color: var(--gray1);
+  transition: 200ms;
+}
+a:active {
+  text-decoration: none;
+  font-weight: normal;
+  color: var(--white1);
+}
+a:focus {
+  text-decoration: none;
+  font-weight: normal;
+  color: var(--white1);
+}
